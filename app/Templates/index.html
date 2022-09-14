@@ -1,0 +1,47 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock title %}
+
+
+
+
+{% block content %}
+    <h1>Python Data Types</h1>
+
+    <div class="container">
+
+        <a href="{{ url_for('integers') }}"><h3>Integers</h3></a>
+            <ul>
+                <li>A zero, positive or negative whole number without a fractional part and having unlimited precision.</li>
+            </ul>
+        <a href="{{ url_for('floats') }}"><h3>Floats</h3></a>
+            <ul>
+                <li>A floating point number. Used to represent real numbers and is written with a decimal point to divide fractional parts.</li>
+            </ul>
+        <a href="{{ url_for('booleans') }}"><h3>Booleans</h3></a>
+            <ul>
+                <li>A built in data type that can either be true (1) or false (0).</li>
+            </ul>
+        <a href="{{ url_for('strings') }}"><h3>Strings</h3></a>
+            <ul>
+                <li>A collection of alphabets, words, or characters.</li>
+            </ul>
+        <a href="{{ url_for('lists') }}"><h3>Lists</h3></a>
+            <ul>
+                <li>A changeable and ordered sequence of elements. A way to hold data defined by [] brackets.</li>
+            </ul>
+        <a href="{{ url_for('dictionaries') }}"><h3>Dictionaries</h3></a>
+            <ul>
+                <li>A collection of data defined in key-value pairs. Where keys cannot be repeated but values can be repeated. Defined by {} brackets.</li>
+            </ul>
+        <a href="{{ url_for('tuples') }}"><h3>Tuples</h3></a>
+            <ul>
+                <li>A collection of single variables stored in one variable. It is ordered and unchanegable and declared with () brackets.</li>
+            </ul>
+
+    </div>
+
+{% endblock content %}
