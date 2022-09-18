@@ -17,26 +17,22 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{{ url_for('index') }}">My App</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+              <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">All Data</a>
               <a class="nav-link" href="{{ url_for('about') }}">About</a>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Data Types
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{{ url_for('booleans') }}">Booleans</a></li>
-                  <li><a class="dropdown-item" href="{{ url_for('dictionaries') }}">Dictionaries</a></li>
-                  <li><a class="dropdown-item" href="{{ url_for('floats') }}">Floats</a></li>
-                  <li><a class="dropdown-item" href="{{ url_for('integers') }}">Integers</a></li>
-                  <li><a class="dropdown-item" href="{{ url_for('lists') }}">Lists</a></li>
-                  <li><a class="dropdown-item" href="{{ url_for('strings') }}">Strings</a></li>
-                  <li><a class="dropdown-item" href="{{ url_for('tuples') }}">Tuples</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('Booleans') }}">Booleans</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('Dictionaries') }}">Dictionaries</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('Floats') }}">Floats</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('Integers') }}">Integers</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('Lists') }}">Lists</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('Strings') }}">Strings</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('Tuples') }}">Tuples</a></li>
                 </ul>
               </li>
               <a class="nav-link" href="{{ url_for('reference') }}">Pass By</a>
